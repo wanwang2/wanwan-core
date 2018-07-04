@@ -1,0 +1,8 @@
+@file:	makeFile;
+@folder:	makeFolder;
+
+@total:	{@time,@area,@thing}{@random};
+@event:	@name,@action;
+@hero:	@role|@name;
+@.year:	@number,@year;
+@+year:	@add{@number},@year;

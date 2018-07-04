@@ -2,12 +2,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.wanwanframework.core.support</groupId>
-	<artifactId>wanwan-core-support</artifactId>
+	<groupId>org.wanwanframework.sentence</groupId>
+	<artifactId>wanwan-sentence</artifactId>
 	<version>0.0.1</version>
 	<packaging>war</packaging>
 
-	<name>wanwan-core-support</name>
+	<name>wanwan-sentence</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>

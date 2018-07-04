@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://camel.apache.org/schema/spring
+         http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+	<bean id="controller" class="org.wanwanframework.file.spirit.SpiritgirlController" />
+
+	<camelContext xmlns="http://camel.apache.org/schema/spring">
+
+		<route id="generateOrder-route">
+			<from uri="timer:foo?period=8s" />
+			<transform>
+				<method ref="controller" method="init" />
+			</transform>
+		</route>
+
+	</camelContext>
+</beans>
